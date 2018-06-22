@@ -1,0 +1,53 @@
+\documentclass{article}
+\title{Side-channel Attack on Cache and MMU}
+\author{Li Dinghong \\SIST, Shanghaitech University \\27663262}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage[]{forest}
+\usepackage[colorlinks,linkcolor=red]{hyperref}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{subfloat}
+\usepackage{pdfpages}
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{xcolor}
+\usepackage{colortbl,booktabs}
+\usepackage{pict2e}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=10mm,
+}
+
+\begin{document}
+\maketitle
+\large
+
+\section{Introduction and Background}{}
+
+\section{Related Works}{}
+
+\section{Methodology: How is it related to Operating Systems? }{
+	There are several different ways to study this topic. For instance, we can propose a novel CPU architecture to raise cache security, or analyze side-channel attacks using information theory. If we want to study it from perspective of operating systems, however, it is better to narrow it to some specific contexts. 
+
+	A good option is to run our models on browsers, as is used in previous works. Most likely, we will test both attack and defense models on three major browsers: Firefox, Safari and Chrome. 
+
+	Side-channel attack is highly related to MMU, which is an important part in modern operating systems. 
+
+	Attack models mainly exploit vulnerability of ASLR. 
+
+	Existing defense models for AnC attack include naively disabling cache and reducing accuracy of timers. 
+}
+
+\section{Better Attack Models}{}
+
+\section{Defense Models}{}
+
+\section{Tradeoffs between Performance and Security on Cache}{
+	We can compare the effectiveness of side-channel attacks on cache with different replacement policies. 
+}
+
+\end{document}
