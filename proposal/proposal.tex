@@ -26,28 +26,38 @@
 \maketitle
 \large
 
-\section{Introduction and Background}{}
+\section{Introduction and Background}{
+	Side-channel attacks are widely studied in recent years. Unlike conventional attack models, side-channel attacks rely on gained from the implementation of a computer system, like time, energy and power consumption and electromagnetic leaks, rather than weaknesses in the implemented algorithm itself. 
 
-\section{Related Works}{}
+	Side-channel attacks on address space layout randomization (ASLR), which is usually thought as an important first line of defense against memory corruption attacks have been proposed in \textbf{Gras, et al. 2017}. 
+}
+
+% \section{Related Works}{}
 
 \section{Methodology: How is it related to Operating Systems? }{
 	There are several different ways to study this topic. For instance, we can propose a novel CPU architecture to raise cache security, or analyze side-channel attacks using information theory. If we want to study it from perspective of operating systems, however, it is better to narrow it to some specific contexts. 
 
 	A good option is to run our models on browsers, as is used in previous works. Most likely, we will test both attack and defense models on three major browsers: Firefox, Safari and Chrome. 
 
-	Side-channel attack is highly related to MMU, which is an important part in modern operating systems. 
-
-	Attack models mainly exploit vulnerability of ASLR. 
-
-	Existing defense models for AnC attack include naively disabling cache and reducing accuracy of timers. 
+	This attack is highly related to MMU, which is an important part in modern operating systems. 
 }
 
-\section{Better Attack Models}{}
+\section{Better Attack Models}{
+	Attack models mainly exploit vulnerability of ASLR. 
 
-\section{Defense Models}{}
+	Can we have a better attack models? 
+
+	That means, can we get privacy information with higher efficieny or/ and higher accuracy? 
+}
+
+\section{Defense Models}{
+	Existing defense models include naively disabling cache, or reducing accuracy of timers. However, these methods are very costly. 
+
+	Are there any better defense models? 
+}
 
 \section{Tradeoffs between Performance and Security on Cache}{
-	We can compare the effectiveness of side-channel attacks on cache with different replacement policies. 
+	We can compare the effectiveness of side-channel attacks on cache with different replacement policies or different cache design. 
 }
 
 \end{document}

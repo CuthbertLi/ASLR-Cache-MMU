@@ -2,7 +2,7 @@
 
 ## Introduction
 
-To get a reliable storage, most existing solutions are based on ACID properties (Atomicity, Consistency, Isolation and Durability). However, some files are so important that we cannot afford to lose it, and mistakenly deleting may be disastrous. Therefore, we want to introduce a new funtion with which users can actively emphasize importance of a certain file. Operating systems can thus take additional resources to ensure it. 
+To get reliable storage, most existing designs are based on ACID properties (Atomicity, Consistency, Isolation and Durability). However, some files are so important that we cannot afford to lose it, and even mistakenly deleting it may be disastrous. Therefore, we want to introduce a new funtion with which users can actively emphasize importance of a certain file. Operating systems can thus take additional resources to ensure it. 
 
 We want to accomplish it using a smart backup function for EXT2 file systems. Users can actively and consciously use it for significant files, to ensure security of TARGET. 
 
